@@ -5,6 +5,8 @@ Chrome DevTools extension that adds an **Api Requests Deduper** panel next to
 into a single row with a counter — perfect for spotting React Query
 `refetchInterval` polling and other duplicate API traffic.
 
+<img width="1144" height="397" alt="Screenshot 2026-04-29 at 08 49 16" src="https://github.com/user-attachments/assets/ef2c360c-9a2c-4f89-9072-34838398ab50" />
+
 ## Features
 
 - DevTools panel that captures only `xhr` and `fetch` resources via
