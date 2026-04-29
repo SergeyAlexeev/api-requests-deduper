@@ -4,23 +4,26 @@
   "description": "Chrome DevTools extension that shows unique API requests with a call counter (deduplication of polling/duplicate XHR/fetch requests).",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "vite build --watch --mode development",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.270",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.3",
-    "sass": "^1.80.6",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.10",
-    "vite-plugin-static-copy": "^2.1.0"
+    "@types/chrome": "0.1.40",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "sass": "1.99.0",
+    "typescript": "6.0.3",
+    "vite": "8.0.10",
+    "vite-plugin-static-copy": "4.1.0"
   }
 }

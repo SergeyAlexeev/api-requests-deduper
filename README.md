@@ -46,9 +46,10 @@ src/
 
 ## Build
 
-Requires Node 18+.
+Requires **Node 22+** (`.nvmrc` pins the major). With nvm:
 
 ```bash
+nvm use            # picks up .nvmrc -> Node 22
 npm install
 npm run build       # tsc --noEmit && vite build  -> dist/
 npm run dev         # vite build --watch (rebuilds on save)
