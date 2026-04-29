@@ -1,0 +1,110 @@
+.row {
+  display: grid;
+  grid-template-columns: 56px 80px 1fr 64px;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    background: var(--bg-row-hover);
+  }
+}
+
+.selected {
+  background: var(--bg-row-selected);
+
+  &:hover {
+    background: var(--bg-row-selected);
+  }
+}
+
+.count {
+  text-align: right;
+}
+
+.counter {
+  display: inline-block;
+  min-width: 26px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: var(--counter-bg);
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  font-size: 11px;
+}
+
+.counterHot {
+  background: var(--counter-bg-hot);
+  color: var(--counter-fg-hot);
+  font-weight: 600;
+}
+
+.method {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.methodGet {
+  color: var(--method-get);
+}
+
+.methodPost {
+  color: var(--method-post);
+}
+
+.methodPut {
+  color: var(--method-put);
+}
+
+.methodDelete {
+  color: var(--method-delete);
+}
+
+.methodPatch {
+  color: var(--method-patch);
+}
+
+.methodOther {
+  color: var(--method-other);
+}
+
+.url {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family:
+    "SF Mono",
+    Menlo,
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+
+.status {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.status2xx {
+  color: var(--status-2xx);
+}
+
+.status3xx {
+  color: var(--status-3xx);
+}
+
+.status4xx {
+  color: var(--status-4xx);
+}
+
+.status5xx {
+  color: var(--status-5xx);
+}
+
+.statusUnknown {
+  color: var(--text-muted);
+}

@@ -1,0 +1,98 @@
+// CSS variables that mimic the Chrome DevTools dark palette. They are used
+// by all SCSS modules so that swapping a theme later only requires editing
+// this file.
+:root {
+  --bg: #202124;
+  --bg-elev: #292a2d;
+  --bg-row-hover: #2f3033;
+  --bg-row-selected: #394457;
+  --border: #3c4043;
+  --text: #e8eaed;
+  --text-muted: #9aa0a6;
+  --accent: #8ab4f8;
+  --accent-strong: #a8c7fa;
+  --counter-bg: #3c4043;
+  --counter-bg-hot: #8ab4f8;
+  --counter-fg-hot: #202124;
+
+  --method-get: #4ec9b0;
+  --method-post: #c586c0;
+  --method-put: #dcdcaa;
+  --method-delete: #f48771;
+  --method-patch: #ce9178;
+  --method-other: #9aa0a6;
+
+  --status-2xx: #81c995;
+  --status-3xx: #fdd663;
+  --status-4xx: #f28b82;
+  --status-5xx: #f48771;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    "SF Pro Text",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 3px 8px;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    background: var(--bg-row-hover);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+input[type="text"],
+input[type="search"] {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 3px 6px;
+  outline: none;
+
+  &:focus {
+    border-color: var(--accent);
+  }
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent);
+}

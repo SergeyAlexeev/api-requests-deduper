@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Api Requests Deduper",
+  "version": "0.1.0",
+  "description": "DevTools panel that lists unique API requests (XHR/fetch) and counts how many times each one was called.",
+  "minimum_chrome_version": "102",
+  "devtools_page": "src/devtools/devtools.html"
+}

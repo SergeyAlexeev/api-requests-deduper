@@ -1,0 +1,59 @@
+.list {
+  flex: 1 1 50%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 56px 80px 1fr 64px;
+  gap: 8px;
+  padding: 4px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--text-muted);
+  font-weight: 500;
+  flex: 0 0 auto;
+}
+
+.colCount {
+  text-align: right;
+}
+
+.colMethod {
+  text-align: left;
+}
+
+.colUrl {
+  overflow: hidden;
+}
+
+.colStatus {
+  text-align: right;
+}
+
+.rows {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.empty {
+  padding: 24px;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.hint {
+  font-size: 11px;
+  max-width: 360px;
+}
